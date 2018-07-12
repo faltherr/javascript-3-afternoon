@@ -30,8 +30,19 @@
 */
 
 //Code Here
+class Employee {
+  constructor(first_name, last_name, email, age){
+    this.first_name = first_name;
+    this.last_name = last_name;
+    this.email = email;
+    this.age = age;
+  }
+  makeWidget(){
+    return this.first_name + " " + this.last_name + " " + "Widget"
+  }
+}
 
-
+console.log(Employee('jeff', 'sm', 'dsfskjhf@', 27))
 
 ////////// PROBLEM 2 //////////
 
@@ -50,8 +61,28 @@
 */
 
 //Code Here
-
-
+class Manager {
+  constructor(first_name, last_name, email, age, reports, makeWidget, hire, fire){
+    this.first_name = first_name;
+    this.last_name = last_name;
+    this.email = email;
+    this.age = age;
+    this.reports = reports[]
+  }
+  makeWidget(){
+    return this.first_name + " " + this.last_name + " " + "Widget";
+  }
+  hire(employee){
+    this.reports.push(employee)
+  }
+  fire(index){
+    for(i=0; i<reports.length; i++){
+      if (i === index){
+        this.reports.splice(reports[i], 1)
+      }
+    }
+  }
+}
 
 ////////// PROBLEM 3 //////////
 
