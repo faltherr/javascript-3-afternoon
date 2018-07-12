@@ -78,7 +78,7 @@ class Manager {
   fire(index){
     for(i=0; i<reports.length; i++){
       if (i === index){
-        this.reports.splice(reports[i], 1)
+        this.reports.splice(i, 1)
       }
     }
   }
